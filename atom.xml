@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-12T16:33:57.184Z</updated>
+  <updated>2019-01-12T17:17:31.408Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="http://yoursite.com/2019/01/13/set-indigo-theme/"/>
     <id>http://yoursite.com/2019/01/13/set-indigo-theme/</id>
     <published>2019-01-12T16:24:03.000Z</published>
-    <updated>2019-01-12T16:33:57.184Z</updated>
+    <updated>2019-01-12T17:17:31.408Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="1-Hexo-indigo-theme-및-dependencies-module-install"><a href="#1-Hexo-indigo-theme-및-dependencies-module-install" class="headerlink" title="1. Hexo indigo theme 및 dependencies module install"></a>1. Hexo indigo theme 및 dependencies module install</h1><pre><code>git clone git@github.com:yscoder/hexo-theme-indigo.git themes/indigonpm install hexo-renderer-less --save   #安装less,作为css的预处理工具npm install hexo-generator-feed --save #安装rss的feed生成工具npm install hexo-generator-json-content --save #用于生成静态站点数据，用于站内搜索的数据源npm install hexo-helper-qrcode --save #用于生成微信分享二维码(Option)</code></pre><h2 id="2-Tags-Categories-페이지-생성"><a href="#2-Tags-Categories-페이지-생성" class="headerlink" title="2. Tags,Categories 페이지 생성"></a>2. Tags,Categories 페이지 생성</h2><pre><code>hexo new tagshexo new categories</code></pre><p>source/tags/index.md파일에 아래내용 추가</p><pre><code>layout: tagscomments: false</code></pre><p>source/tags/categories.md파일에 아래내용 추가</p><pre><code>layout: categoriescomments: false</code></pre><h1 id="3-Indigo-적용"><a href="#3-Indigo-적용" class="headerlink" title="3. Indigo 적용"></a>3. Indigo 적용</h1><p>Root폴더 _config.yml파일에 indigo theme적용</p><pre><code># Extensions## Plugins: https://hexo.io/plugins/## Themes: https://hexo.io/themes/theme: indigo</code></pre><p>Hexo 실행</p><pre><code>hexo clean &amp; hexo g &amp; hexo s </code></pre><p>배포</p><pre><code>hexo d</code></pre><h1 id="4-Indigo-기본-설정-변겅"><a href="#4-Indigo-기본-설정-변겅" class="headerlink" title="4. Indigo 기본 설정 변겅"></a>4. Indigo 기본 설정 변겅</h1><pre><code>/theme/indigo/_config.yml에서 속성값 변경</code></pre><p><strong>Reference: </strong></p><p><a href="https://blog.csdn.net/u010075335/article/details/82861322" title="hexo安装、生成blog并deploy到github" target="_blank" rel="noopener">hexo安装、生成blog并deploy到github</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot; title=&quot;1.&quot;&gt;&lt;/a&gt;1.&lt;/h1&gt;
+        &lt;h1 id=&quot;1-Hexo-indigo-theme-및-dependencies-module-install&quot;&gt;&lt;a href=&quot;#1-Hexo-indigo-theme-및-dependencies-module-install&quot; class=&quot;headerlink&quot; t
       
     
     </summary>
@@ -59,27 +59,6 @@
     
     
       <category term="GitHub, Blog" scheme="http://yoursite.com/tags/GitHub-Blog/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2019/01/12/hello-world/"/>
-    <id>http://yoursite.com/2019/01/12/hello-world/</id>
-    <published>2019-01-11T17:51:49.860Z</published>
-    <updated>2019-01-11T17:51:49.860Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
     
   </entry>
   
