@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-01-12T16:33:57.184Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Hao, Lin</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo Indigo theme 적용</title>
+    <link href="http://yoursite.com/2019/01/13/set-indigo-theme/"/>
+    <id>http://yoursite.com/2019/01/13/set-indigo-theme/</id>
+    <published>2019-01-12T16:24:03.000Z</published>
+    <updated>2019-01-12T16:33:57.184Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot; title=&quot;1.&quot;&gt;&lt;/a&gt;1.&lt;/h1&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="GitHub, Blog" scheme="http://yoursite.com/tags/GitHub-Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo Blog 만들기</title>
+    <link href="http://yoursite.com/2019/01/12/set-up-blogs/"/>
+    <id>http://yoursite.com/2019/01/12/set-up-blogs/</id>
+    <published>2019-01-11T17:57:10.000Z</published>
+    <updated>2019-01-12T16:33:19.036Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-GitHub에서-public-respository-만들기"><a href="#1-GitHub에서-public-respository-만들기" class="headerlink" title="1. GitHub에서 public respository 만들기"></a>1. GitHub에서 public respository 만들기</h2><pre><code>public repository: linhao06.github.io</code></pre><p>PS:Repository이름은  GitHub계정뒤에 github.io를 추가하는 형식으로 repository 이름 지정</p><h2 id="2-Git와-NodeJS-프로그램-설치"><a href="#2-Git와-NodeJS-프로그램-설치" class="headerlink" title="2. Git와 NodeJS 프로그램 설치"></a>2. Git와 NodeJS 프로그램 설치</h2><ul><li><a href="https://git-scm.com/downloads" title="Git" target="_blank" rel="noopener">Git</a></li><li><a href="https://nodejs.org/en/" title="NodeJS" target="_blank" rel="noopener">NodeJS</a></li></ul><h2 id="3-Hexo-사용"><a href="#3-Hexo-사용" class="headerlink" title="3. Hexo 사용"></a>3. Hexo 사용</h2><h3 id="3-1-Hexo-설치"><a href="#3-1-Hexo-설치" class="headerlink" title="3.1 Hexo 설치"></a>3.1 Hexo 설치</h3><pre><code>mkdir Blogs  #Blog폴더 생성cd Blogsnpm install hexo-cli -g   #hexo 모듈 설치hexo initnpm installhexo g #페이지 생성 혹은 hexo generatehexo s # 서버 시작 혹은 hexo server</code></pre><hr><h3 id="3-2-Hexo-페이지-생성"><a href="#3-2-Hexo-페이지-생성" class="headerlink" title="3.2 Hexo 페이지 생성"></a>3.2 Hexo 페이지 생성</h3><pre><code>hexo new &quot;문장명&quot; #문장생성hexo new page &quot;페이지명&quot; #페이지 생성&quot;</code></pre><hr><h3 id="3-3-Hexo-theme-추가"><a href="#3-3-Hexo-theme-추가" class="headerlink" title="3.3 Hexo theme 추가"></a>3.3 Hexo theme 추가</h3><pre><code>cd Blogsgit clone git://github.com/tommy351/hexo-theme-light.git themes/lightcd themes/lightgit pull</code></pre><p>위의 명령 실행후 Root폴더 _config.yml파일에서 theme속성 편집</p><pre><code># Extensions## Plugins: https://hexo.io/plugins/## Themes: https://hexo.io/themes/theme: light</code></pre><h3 id="3-4-Hexo-생성한-페이지를-GitHub에-배포"><a href="#3-4-Hexo-생성한-페이지를-GitHub에-배포" class="headerlink" title="3.4 Hexo 생성한 페이지를 GitHub에 배포"></a>3.4 Hexo 생성한 페이지를 GitHub에 배포</h3><p>위의 _config.yml파일에서 deploy 속성 편집</p><pre><code># Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy:    type: git    repo: git@github.com:linhao06/linhao06.github.io.git  #这里的网址填你自己的    branch: master   </code></pre><p>hexo deploy 모듈 install</p><pre><code>cd Blogsnpm install hexo-deployer-git --save   </code></pre><p>SSH key 생성 및 GitHub에 등록 </p><pre><code>cd ~/.sshssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;[Enter][Enter][Enter] #세번쯤 Enter key 클릭ls #보면 clip &lt; id_rsa.pub</code></pre><p><strong>참고</strong>:</p><p><a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" title="Generating a new SSH key and adding it to the ssh-agent" target="_blank" rel="noopener">Generating a new SSH key and adding it to the ssh-agen</a></p><p>GitHub에 로그인후 <strong>SSH and GPG Key</strong> Tab에서 생성한 SSH Key내용을 추가.</p><pre><code>cd Blogsssh -T git@github.com</code></pre><p>GitHub연결 테스트후 성공하면 아래 메세지 출력</p><pre><code>Hi linhao06! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</code></pre><p>Git 개인정보 설치</p><pre><code>git config --global user.name &quot;이름&quot;git config --global user.email &quot;메일주소&quot;</code></pre><p>배포 </p><pre><code>hexo d</code></pre><h3 id="3-5-Hexo-명령어"><a href="#3-5-Hexo-명령어" class="headerlink" title="3.5 Hexo 명령어"></a>3.5 Hexo 명령어</h3><pre><code>hexo n == hexo newhexo g == hexo generatehexo s == hexo serverhexo d == hexo deploy</code></pre><p><strong>참고:</strong></p><p><a href="https://www.cnblogs.com/jackyroc/p/7681938.html" title="我是如何利用Github Pages搭建起我的博客，细数一路的坑" target="_blank" rel="noopener">我是如何利用Github Pages搭建起我的博客，细数一路的坑</a></p><p><a href="https://www.williamlong.info/archives/4319.html" title="好用的Markdown编辑器一览" target="_blank" rel="noopener">好用的Markdown编辑器一览</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;1-GitHub에서-public-respository-만들기&quot;&gt;&lt;a href=&quot;#1-GitHub에서-public-respository-만들기&quot; class=&quot;headerlink&quot; title=&quot;1. GitHub에서 public resposi
+      
+    
+    </summary>
+    
+    
+      <category term="GitHub, Blog" scheme="http://yoursite.com/tags/GitHub-Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/01/12/hello-world/"/>
+    <id>http://yoursite.com/2019/01/12/hello-world/</id>
+    <published>2019-01-11T17:51:49.860Z</published>
+    <updated>2019-01-11T17:51:49.860Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
