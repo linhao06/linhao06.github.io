@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Hexo 리소스 GitHu에 배포 | Hao&#39;s Blogs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="GitHub, Hexo">
+    <meta name="description" content="멀티 디바이스에서 Hexo Blogs를 편집 배포하기 위하여 Hexo 리소스를 GitHub에 배포한다. 1. GitHub에 Hexo 소스 배포배포할 리소스는 아래와 같습니다. 1. scaffolds 2. source 3. .gitignore 4. _config.yml 5. package.json Hexo를 배포한 GitHub Repository에 새로운 b">
+<meta name="keywords" content="GitHub, Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo 리소스 GitHu에 배포">
+<meta property="og:url" content="http://yoursite.com/2019/01/13/deploy-hexo-source/index.html">
+<meta property="og:site_name" content="Hao&#39;s Blogs">
+<meta property="og:description" content="멀티 디바이스에서 Hexo Blogs를 편집 배포하기 위하여 Hexo 리소스를 GitHub에 배포한다. 1. GitHub에 Hexo 소스 배포배포할 리소스는 아래와 같습니다. 1. scaffolds 2. source 3. .gitignore 4. _config.yml 5. package.json Hexo를 배포한 GitHub Repository에 새로운 b">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-01-12T18:45:20.637Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo 리소스 GitHu에 배포">
+<meta name="twitter:description" content="멀티 디바이스에서 Hexo Blogs를 편집 배포하기 위하여 Hexo 리소스를 GitHub에 배포한다. 1. GitHub에 Hexo 소스 배포배포할 리소스는 아래와 같습니다. 1. scaffolds 2. source 3. .gitignore 4. _config.yml 5. package.json Hexo를 배포한 GitHub Repository에 새로운 b">
+    
+        <link rel="alternate" type="application/atom+xml" title="Hao&#39;s Blogs" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Hao, Lin</h5>
+          <a href="mailto:linhao06@gmail.com" title="linhao06@gmail.com" class="mail">linhao06@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives">
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags">
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories">
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/linhao06" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Hexo 리소스 GitHu에 배포</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Hexo 리소스 GitHu에 배포</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-01-12T18:21:06.000Z" itemprop="datePublished" class="page-time">
+  2019-01-13
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#1-GitHub에-Hexo-소스-배포"><span class="post-toc-number">1.</span> <span class="post-toc-text">1. GitHub에 Hexo 소스 배포</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#2-새로운-환경에서-Hexo-실행"><span class="post-toc-number">2.</span> <span class="post-toc-text">2. 새로운 환경에서 Hexo 실행</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-1-Hexo-설치"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">2.1 Hexo 설치</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-2-GitHub에서-받은-리소스를-Hexo에-적용"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">2.2 GitHub에서 받은 리소스를 Hexo에 적용</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-3-Indigo-theme-install"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">2.3 Indigo theme install</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-4-Hexo-실행-및-배포"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">2.4 Hexo 실행 및 배포</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-deploy-hexo-source" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Hexo 리소스 GitHu에 배포</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-01-13 03:21:06" datetime="2019-01-12T18:21:06.000Z" itemprop="datePublished">2019-01-13</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style="display:none">
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>멀티 디바이스에서 Hexo Blogs를 편집 배포하기 위하여 Hexo 리소스를 GitHub에 배포한다.</p>
+<h1 id="1-GitHub에-Hexo-소스-배포"><a href="#1-GitHub에-Hexo-소스-배포" class="headerlink" title="1. GitHub에 Hexo 소스 배포"></a>1. GitHub에 Hexo 소스 배포</h1><p>배포할 리소스는 아래와 같습니다.</p>
+<pre><code>1. scaffolds
+2. source
+3. .gitignore
+4. _config.yml
+5. package.json
+</code></pre><p>Hexo를 배포한 GitHub Repository에 새로운 branch(hexo)를 생성하여 위를 리소스를 저장.</p>
+<h1 id="2-새로운-환경에서-Hexo-실행"><a href="#2-새로운-환경에서-Hexo-실행" class="headerlink" title="2. 새로운 환경에서 Hexo 실행"></a>2. 새로운 환경에서 Hexo 실행</h1><p><strong>준비작업</strong>: 아래의 프로그램 Install</p>
+<ul>
+<li><a href="https://git-scm.com/downloads" title="Git" target="_blank" rel="noopener">Git</a></li>
+<li><a href="https://nodejs.org/en/" title="NodeJS" target="_blank" rel="noopener">NodeJS</a></li>
+</ul>
+<h2 id="2-1-Hexo-설치"><a href="#2-1-Hexo-설치" class="headerlink" title="2.1 Hexo 설치"></a>2.1 Hexo 설치</h2><pre><code>mkdir Blogs  #Blog폴더 생성
+cd Blogs
+npm install hexo-cli -g   #hexo 모듈 설치
+hexo init
+</code></pre><p>위에서 생성한 scaffolds, source 자식폴더를 삭제.</p>
+<h2 id="2-2-GitHub에서-받은-리소스를-Hexo에-적용"><a href="#2-2-GitHub에서-받은-리소스를-Hexo에-적용" class="headerlink" title="2.2 GitHub에서 받은 리소스를 Hexo에 적용"></a>2.2 GitHub에서 받은 리소스를 Hexo에 적용</h2><pre><code>git clone -b hexo --single-branch https://github.com/linhao06/linhao06.github.io temp
+</code></pre><p>temp폴더내 전체문서를 위에서 생성한 Blogs폴더에 붙여넣음.</p>
+<h2 id="2-3-Indigo-theme-install"><a href="#2-3-Indigo-theme-install" class="headerlink" title="2.3 Indigo theme install"></a>2.3 Indigo theme install</h2><pre><code>cd Blogs
+git clone git@github.com:yscoder/hexo-theme-indigo.git themes/indigo
+</code></pre><h2 id="2-4-Hexo-실행-및-배포"><a href="#2-4-Hexo-실행-및-배포" class="headerlink" title="2.4 Hexo 실행 및 배포"></a>2.4 Hexo 실행 및 배포</h2><p>Hexo 실행</p>
+<pre><code>hexo clean &amp; hexo g &amp; hexo s 
+</code></pre><p>배포</p>
+<pre><code>hexo d
+</code></pre><p>방문</p>
+<pre><code>https://linhao06.github.io/
+</code></pre>
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2019-01-12T18:45:20.637Z" itemprop="dateUpdated">2019-01-13 03:45:20</time>
+</span><br>
+
+
+        
+    </div>
+    
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/avatar.jpg" alt="Hao, Lin">
+            Hao, Lin
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub-Hexo/">GitHub, Hexo</a></li></ul>
+
+
+            
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/01/13/set-indigo-theme/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Hexo Indigo theme 적용</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Hao, Lin &copy; 2015 - 2019</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
