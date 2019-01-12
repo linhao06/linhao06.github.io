@@ -1,7 +1,7 @@
 ---
 title: Hexo Indigo theme 적용
 date: 2019-01-13 01:24:03
-tags: GitHub, Blog
+tags: GitHub, Hexo
 ---
 
 # 1. Hexo indigo theme 및 dependencies module install #
@@ -47,7 +47,6 @@ Hexo 실행
 # 4. Indigo 기본 설정 변겅 #
 
 	/theme/indigo/_config.yml에서 속성값 변경
-
 
 **Reference: **
 

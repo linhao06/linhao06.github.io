@@ -1,7 +1,7 @@
 ---
 title: Hexo Blog 만들기
 date: 2019-01-12 02:57:10
-tags: GitHub, Blog
+tags: GitHub, Hexo
 ---
 
 ## 1. GitHub에서 public respository 만들기  ##
